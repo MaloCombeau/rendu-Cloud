@@ -14,3 +14,5 @@ Dans le docket-compose :
 Une fois le docker-compose up effectué, on a un environnement de travail avec la possibilité de :
 - utiliser gcc pour compiler le code présentent dans le repertoire code
 - faire un Cmake pour run le code
+
+Je ne sais pas pourquoi mais c'est lent une fois le docker-compose up fait, même pour un ls dans l'image.
