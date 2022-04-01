@@ -1,0 +1,18 @@
+version: "3"
+
+networks:
+  localnet3:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 10.44.0.0/28
+
+services:
+  c:
+    build: C
+    stdin_open: true
+    tty: true
+    volumes:
+      - ./code:/code
+    networks:
+      - localnet3
